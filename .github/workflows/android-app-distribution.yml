@@ -24,6 +24,13 @@ jobs:
         with:
           validate-wrappers: false
 
+      - name: Write google-services.json
+        run: |
+          cat > app/google-services.json <<'EOF'
+          ${{ secrets.GOOGLE_SERVICES_JSON }}
+          EOF
+
+
       - name: Build debug APK
         run: gradle :app:assembleDebug
 
