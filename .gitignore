@@ -1,0 +1,10 @@
+.gradle/
+.idea/
+*.iml
+local.properties
+**/build/
+.DS_Store
+
+# Firebase config is required to build; keep it committed only if you want.
+# If you prefer not to commit it, remove this line.
+# app/google-services.json
